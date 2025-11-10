@@ -1,0 +1,57 @@
+# ==================
+# Backend - Spring Boot
+# ==================
+
+# Build directories
+Backend/student-management-backend/target/
+Backend/student-management-backend/build/
+
+# Maven & Gradle files
+Backend/student-management-backend/.mvn/
+Backend/student-management-backend/.gradle/
+Backend/student-management-backend/out/
+
+# Logs
+Backend/student-management-backend/*.log
+Backend/student-management-backend/logs/
+
+# Java class files
+Backend/student-management-backend/**/*.class
+
+# IDEA project files
+.vscode/
+.idea/
+*.iml
+
+# ==================
+# Frontend - React
+# ==================
+
+# Dependency directory
+Frontend/student-portal-frontend/node_modules/
+
+# Production build folder
+Frontend/student-portal-frontend/build/
+
+# Environment variables
+Frontend/student-portal-frontend/.env
+
+# Misc Mac/Windows files
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==================
+# System Files
+# ==================
+
+# VSCode workspace storage
+.vscode/
+
+# Others
+*.swp
+*.swo
