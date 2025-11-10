@@ -1,14 +1,20 @@
-# Use official OpenJDK runtime as a parent image
-FROM eclipse-temurin:17-jdk-focal
+# Build stage
+FROM maven:3.8.7-openjdk-17 AS builder
 
-# Set the working directory in the container
 WORKDIR /app
 
-# Copy the Spring Boot jar to the container
-COPY target/*.jar app.jar
+COPY pom.xml .
+COPY src ./src/
 
-# Expose the port your app runs on
+RUN mvn clean package -DskipTests
+
+# Run stage
+FROM eclipse-temurin:17-jdk-focal
+
+WORKDIR /app
+
+COPY --from=builder /app/target/*.jar app.jar
+
 EXPOSE 8080
 
-# Run the jar file
 ENTRYPOINT ["java", "-jar", "app.jar"]
