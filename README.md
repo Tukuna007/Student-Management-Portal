@@ -118,3 +118,12 @@ Contributions are welcome! Feel free to open issues or pull requests.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Images
+
+![Alt text](./Images/Screenshot(293).png "Optional title")
+![Alt text](./Images/Screenshot(292).png "Optional title")
+![Alt text](./Images/Screenshot(291).png "Optional title")
+![Alt text](./Images/Screenshot(290).png "Optional title")
+![Alt text](./Images/Screenshot(289).png "Optional title")
+![Alt text](./Images/Screenshot(288).png "Optional title")
